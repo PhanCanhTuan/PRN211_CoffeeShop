@@ -30,36 +30,36 @@
         {
             components = new System.ComponentModel.Container();
             groupBox1 = new GroupBox();
+            label9 = new Label();
+            label8 = new Label();
+            label7 = new Label();
+            label6 = new Label();
+            label5 = new Label();
+            label4 = new Label();
+            label3 = new Label();
+            label2 = new Label();
+            label1 = new Label();
+            tb_Salary = new TextBox();
+            tb_DateWork = new TextBox();
+            tb_Phone = new TextBox();
+            tbRole = new TextBox();
+            tb_Password = new TextBox();
+            tb_FullName = new TextBox();
+            tb_UserName = new TextBox();
+            tb_UserID = new TextBox();
             groupBox2 = new GroupBox();
+            bt_Clear = new Button();
+            bt_Delete = new Button();
+            bt_Update = new Button();
+            bt_Create = new Button();
             groupBox3 = new GroupBox();
             dgv_UserManagement = new DataGridView();
             groupBox4 = new GroupBox();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
-            textBox5 = new TextBox();
-            textBox6 = new TextBox();
-            textBox7 = new TextBox();
-            textBox8 = new TextBox();
-            label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
-            label4 = new Label();
-            label5 = new Label();
-            label6 = new Label();
-            label7 = new Label();
-            label8 = new Label();
-            label9 = new Label();
-            bt_Create = new Button();
-            bt_Update = new Button();
-            bt_Delete = new Button();
-            bt_Clear = new Button();
-            label10 = new Label();
-            textBox9 = new TextBox();
-            bindingSource1 = new BindingSource(components);
+            tb_Close = new Button();
             bt_Search = new Button();
-            button6 = new Button();
+            tb_Search = new TextBox();
+            label10 = new Label();
+            bindingSource1 = new BindingSource(components);
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             groupBox3.SuspendLayout();
@@ -79,19 +79,157 @@
             groupBox1.Controls.Add(label3);
             groupBox1.Controls.Add(label2);
             groupBox1.Controls.Add(label1);
-            groupBox1.Controls.Add(textBox8);
-            groupBox1.Controls.Add(textBox7);
-            groupBox1.Controls.Add(textBox6);
-            groupBox1.Controls.Add(textBox5);
-            groupBox1.Controls.Add(textBox4);
-            groupBox1.Controls.Add(textBox3);
-            groupBox1.Controls.Add(textBox2);
-            groupBox1.Controls.Add(textBox1);
-            groupBox1.Location = new Point(12, 7);
+            groupBox1.Controls.Add(tb_Salary);
+            groupBox1.Controls.Add(tb_DateWork);
+            groupBox1.Controls.Add(tb_Phone);
+            groupBox1.Controls.Add(tbRole);
+            groupBox1.Controls.Add(tb_Password);
+            groupBox1.Controls.Add(tb_FullName);
+            groupBox1.Controls.Add(tb_UserName);
+            groupBox1.Controls.Add(tb_UserID);
+            groupBox1.Location = new Point(13, 7);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new Size(417, 365);
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Location = new Point(157, 23);
+            label9.Name = "label9";
+            label9.Size = new Size(132, 20);
+            label9.TabIndex = 16;
+            label9.Text = "Staff Management";
+            label9.Click += label9_Click;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Location = new Point(21, 311);
+            label8.Name = "label8";
+            label8.Size = new Size(49, 20);
+            label8.TabIndex = 15;
+            label8.Text = "Salary";
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(21, 269);
+            label7.Name = "label7";
+            label7.Size = new Size(82, 20);
+            label7.TabIndex = 14;
+            label7.Text = "Date Work:";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(21, 233);
+            label6.Name = "label6";
+            label6.Size = new Size(53, 20);
+            label6.TabIndex = 13;
+            label6.Text = "Phone:";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(21, 200);
+            label5.Name = "label5";
+            label5.Size = new Size(42, 20);
+            label5.TabIndex = 12;
+            label5.Text = "Role:";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(21, 163);
+            label4.Name = "label4";
+            label4.Size = new Size(73, 20);
+            label4.TabIndex = 11;
+            label4.Text = "Password:";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(21, 132);
+            label3.Name = "label3";
+            label3.Size = new Size(79, 20);
+            label3.TabIndex = 10;
+            label3.Text = "FullName: ";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(21, 99);
+            label2.Name = "label2";
+            label2.Size = new Size(81, 20);
+            label2.TabIndex = 9;
+            label2.Text = "UserName:";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(21, 66);
+            label1.Name = "label1";
+            label1.Size = new Size(56, 20);
+            label1.TabIndex = 8;
+            label1.Text = "UserID:";
+            // 
+            // tb_Salary
+            // 
+            tb_Salary.Location = new Point(169, 308);
+            tb_Salary.Name = "tb_Salary";
+            tb_Salary.Size = new Size(230, 27);
+            tb_Salary.TabIndex = 7;
+            // 
+            // tb_DateWork
+            // 
+            tb_DateWork.Location = new Point(169, 266);
+            tb_DateWork.Name = "tb_DateWork";
+            tb_DateWork.Size = new Size(230, 27);
+            tb_DateWork.TabIndex = 6;
+            // 
+            // tb_Phone
+            // 
+            tb_Phone.Location = new Point(169, 233);
+            tb_Phone.Name = "tb_Phone";
+            tb_Phone.Size = new Size(230, 27);
+            tb_Phone.TabIndex = 5;
+            // 
+            // tbRole
+            // 
+            tbRole.Location = new Point(169, 200);
+            tbRole.Name = "tbRole";
+            tbRole.Size = new Size(230, 27);
+            tbRole.TabIndex = 4;
+            // 
+            // tb_Password
+            // 
+            tb_Password.Location = new Point(169, 160);
+            tb_Password.Name = "tb_Password";
+            tb_Password.Size = new Size(230, 27);
+            tb_Password.TabIndex = 3;
+            // 
+            // tb_FullName
+            // 
+            tb_FullName.Location = new Point(169, 125);
+            tb_FullName.Name = "tb_FullName";
+            tb_FullName.Size = new Size(230, 27);
+            tb_FullName.TabIndex = 2;
+            // 
+            // tb_UserName
+            // 
+            tb_UserName.Location = new Point(169, 92);
+            tb_UserName.Name = "tb_UserName";
+            tb_UserName.Size = new Size(230, 27);
+            tb_UserName.TabIndex = 1;
+            // 
+            // tb_UserID
+            // 
+            tb_UserID.Location = new Point(169, 59);
+            tb_UserID.Name = "tb_UserID";
+            tb_UserID.Size = new Size(230, 27);
+            tb_UserID.TabIndex = 0;
             // 
             // groupBox2
             // 
@@ -104,6 +242,42 @@
             groupBox2.Size = new Size(416, 128);
             groupBox2.TabIndex = 1;
             groupBox2.TabStop = false;
+            // 
+            // bt_Clear
+            // 
+            bt_Clear.Location = new Point(213, 83);
+            bt_Clear.Name = "bt_Clear";
+            bt_Clear.Size = new Size(152, 39);
+            bt_Clear.TabIndex = 3;
+            bt_Clear.Text = "Clear";
+            bt_Clear.UseVisualStyleBackColor = true;
+            // 
+            // bt_Delete
+            // 
+            bt_Delete.Location = new Point(20, 83);
+            bt_Delete.Name = "bt_Delete";
+            bt_Delete.Size = new Size(152, 39);
+            bt_Delete.TabIndex = 2;
+            bt_Delete.Text = "Delete";
+            bt_Delete.UseVisualStyleBackColor = true;
+            // 
+            // bt_Update
+            // 
+            bt_Update.Location = new Point(213, 26);
+            bt_Update.Name = "bt_Update";
+            bt_Update.Size = new Size(152, 39);
+            bt_Update.TabIndex = 1;
+            bt_Update.Text = "Update";
+            bt_Update.UseVisualStyleBackColor = true;
+            // 
+            // bt_Create
+            // 
+            bt_Create.Location = new Point(20, 26);
+            bt_Create.Name = "bt_Create";
+            bt_Create.Size = new Size(152, 39);
+            bt_Create.TabIndex = 0;
+            bt_Create.Text = "Create";
+            bt_Create.UseVisualStyleBackColor = true;
             // 
             // groupBox3
             // 
@@ -126,9 +300,9 @@
             // 
             // groupBox4
             // 
-            groupBox4.Controls.Add(button6);
+            groupBox4.Controls.Add(tb_Close);
             groupBox4.Controls.Add(bt_Search);
-            groupBox4.Controls.Add(textBox9);
+            groupBox4.Controls.Add(tb_Search);
             groupBox4.Controls.Add(label10);
             groupBox4.Location = new Point(449, 381);
             groupBox4.Name = "groupBox4";
@@ -136,195 +310,14 @@
             groupBox4.TabIndex = 3;
             groupBox4.TabStop = false;
             // 
-            // textBox1
+            // tb_Close
             // 
-            textBox1.Location = new Point(169, 59);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(230, 27);
-            textBox1.TabIndex = 0;
-            // 
-            // textBox2
-            // 
-            textBox2.Location = new Point(169, 92);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(230, 27);
-            textBox2.TabIndex = 1;
-            // 
-            // textBox3
-            // 
-            textBox3.Location = new Point(169, 125);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(230, 27);
-            textBox3.TabIndex = 2;
-            // 
-            // textBox4
-            // 
-            textBox4.Location = new Point(169, 160);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(230, 27);
-            textBox4.TabIndex = 3;
-            // 
-            // textBox5
-            // 
-            textBox5.Location = new Point(169, 200);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(230, 27);
-            textBox5.TabIndex = 4;
-            // 
-            // textBox6
-            // 
-            textBox6.Location = new Point(169, 233);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(230, 27);
-            textBox6.TabIndex = 5;
-            // 
-            // textBox7
-            // 
-            textBox7.Location = new Point(169, 266);
-            textBox7.Name = "textBox7";
-            textBox7.Size = new Size(230, 27);
-            textBox7.TabIndex = 6;
-            // 
-            // textBox8
-            // 
-            textBox8.Location = new Point(169, 308);
-            textBox8.Name = "textBox8";
-            textBox8.Size = new Size(230, 27);
-            textBox8.TabIndex = 7;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(21, 66);
-            label1.Name = "label1";
-            label1.Size = new Size(56, 20);
-            label1.TabIndex = 8;
-            label1.Text = "UserID:";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(21, 99);
-            label2.Name = "label2";
-            label2.Size = new Size(81, 20);
-            label2.TabIndex = 9;
-            label2.Text = "UserName:";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new Point(21, 132);
-            label3.Name = "label3";
-            label3.Size = new Size(79, 20);
-            label3.TabIndex = 10;
-            label3.Text = "FullName: ";
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Location = new Point(21, 163);
-            label4.Name = "label4";
-            label4.Size = new Size(73, 20);
-            label4.TabIndex = 11;
-            label4.Text = "Password:";
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Location = new Point(21, 200);
-            label5.Name = "label5";
-            label5.Size = new Size(42, 20);
-            label5.TabIndex = 12;
-            label5.Text = "Role:";
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Location = new Point(21, 233);
-            label6.Name = "label6";
-            label6.Size = new Size(53, 20);
-            label6.TabIndex = 13;
-            label6.Text = "Phone:";
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Location = new Point(21, 269);
-            label7.Name = "label7";
-            label7.Size = new Size(82, 20);
-            label7.TabIndex = 14;
-            label7.Text = "Date Work:";
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Location = new Point(21, 311);
-            label8.Name = "label8";
-            label8.Size = new Size(49, 20);
-            label8.TabIndex = 15;
-            label8.Text = "Salary";
-            // 
-            // label9
-            // 
-            label9.AutoSize = true;
-            label9.Location = new Point(157, 23);
-            label9.Name = "label9";
-            label9.Size = new Size(132, 20);
-            label9.TabIndex = 16;
-            label9.Text = "Staff Management";
-            label9.Click += label9_Click;
-            // 
-            // bt_Create
-            // 
-            bt_Create.Location = new Point(20, 26);
-            bt_Create.Name = "bt_Create";
-            bt_Create.Size = new Size(152, 39);
-            bt_Create.TabIndex = 0;
-            bt_Create.Text = "Create";
-            bt_Create.UseVisualStyleBackColor = true;
-            // 
-            // bt_Update
-            // 
-            bt_Update.Location = new Point(213, 26);
-            bt_Update.Name = "bt_Update";
-            bt_Update.Size = new Size(152, 39);
-            bt_Update.TabIndex = 1;
-            bt_Update.Text = "Update";
-            bt_Update.UseVisualStyleBackColor = true;
-            // 
-            // bt_Delete
-            // 
-            bt_Delete.Location = new Point(20, 83);
-            bt_Delete.Name = "bt_Delete";
-            bt_Delete.Size = new Size(152, 39);
-            bt_Delete.TabIndex = 2;
-            bt_Delete.Text = "Delete";
-            bt_Delete.UseVisualStyleBackColor = true;
-            // 
-            // bt_Clear
-            // 
-            bt_Clear.Location = new Point(213, 83);
-            bt_Clear.Name = "bt_Clear";
-            bt_Clear.Size = new Size(152, 39);
-            bt_Clear.TabIndex = 3;
-            bt_Clear.Text = "Clear";
-            bt_Clear.UseVisualStyleBackColor = true;
-            // 
-            // label10
-            // 
-            label10.AutoSize = true;
-            label10.Location = new Point(46, 32);
-            label10.Name = "label10";
-            label10.Size = new Size(56, 20);
-            label10.TabIndex = 16;
-            label10.Text = "Search:";
-            // 
-            // textBox9
-            // 
-            textBox9.Location = new Point(129, 29);
-            textBox9.Name = "textBox9";
-            textBox9.Size = new Size(337, 27);
-            textBox9.TabIndex = 17;
+            tb_Close.Location = new Point(485, 80);
+            tb_Close.Name = "tb_Close";
+            tb_Close.Size = new Size(152, 39);
+            tb_Close.TabIndex = 19;
+            tb_Close.Text = "Close";
+            tb_Close.UseVisualStyleBackColor = true;
             // 
             // bt_Search
             // 
@@ -335,14 +328,21 @@
             bt_Search.Text = "Search";
             bt_Search.UseVisualStyleBackColor = true;
             // 
-            // button6
+            // tb_Search
             // 
-            button6.Location = new Point(485, 80);
-            button6.Name = "button6";
-            button6.Size = new Size(152, 39);
-            button6.TabIndex = 19;
-            button6.Text = "Close";
-            button6.UseVisualStyleBackColor = true;
+            tb_Search.Location = new Point(129, 29);
+            tb_Search.Name = "tb_Search";
+            tb_Search.Size = new Size(337, 27);
+            tb_Search.TabIndex = 17;
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Location = new Point(46, 32);
+            label10.Name = "label10";
+            label10.Size = new Size(56, 20);
+            label10.TabIndex = 16;
+            label10.Text = "Search:";
             // 
             // ManagerForm
             // 
@@ -399,5 +399,15 @@
         private BindingSource bindingSource1;
         private Button button6;
         private Button bt_Search;
+        private Button tb_Close;
+        private TextBox tb_Search;
+        private TextBox tb_Salary;
+        private TextBox tb_DateWork;
+        private TextBox tb_Phone;
+        private TextBox tbRole;
+        private TextBox tb_Password;
+        private TextBox tb_FullName;
+        private TextBox tb_UserName;
+        private TextBox tb_UserID;
     }
 }
