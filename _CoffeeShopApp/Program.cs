@@ -1,3 +1,5 @@
+using CoffeeShopApp;
+
 namespace _CoffeeShopApp
 {
     internal static class Program
