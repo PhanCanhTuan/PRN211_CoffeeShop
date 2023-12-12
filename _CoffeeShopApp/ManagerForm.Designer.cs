@@ -53,7 +53,7 @@
             groupBox3 = new GroupBox();
             dgv_UserManagement = new DataGridView();
             groupBox4 = new GroupBox();
-            tb_Close = new Button();
+            tb_Logout = new Button();
             bt_Search = new Button();
             tb_Search = new TextBox();
             label10 = new Label();
@@ -300,7 +300,7 @@
             // 
             // groupBox4
             // 
-            groupBox4.Controls.Add(tb_Close);
+            groupBox4.Controls.Add(tb_Logout);
             groupBox4.Controls.Add(bt_Search);
             groupBox4.Controls.Add(tb_Search);
             groupBox4.Controls.Add(label10);
@@ -310,15 +310,15 @@
             groupBox4.TabIndex = 3;
             groupBox4.TabStop = false;
             // 
-            // tb_Close
+            // tb_Logout
             // 
-            tb_Close.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            tb_Close.Location = new Point(485, 80);
-            tb_Close.Name = "tb_Close";
-            tb_Close.Size = new Size(152, 39);
-            tb_Close.TabIndex = 19;
-            tb_Close.Text = "Close";
-            tb_Close.UseVisualStyleBackColor = true;
+            tb_Logout.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            tb_Logout.Location = new Point(485, 80);
+            tb_Logout.Name = "tb_Logout";
+            tb_Logout.Size = new Size(152, 39);
+            tb_Logout.TabIndex = 19;
+            tb_Logout.Text = "Logout";
+            tb_Logout.UseVisualStyleBackColor = true;
             // 
             // bt_Search
             // 
@@ -417,7 +417,7 @@
         private BindingSource bindingSource1;
         private Button button6;
         private Button bt_Search;
-        private Button tb_Close;
+        private Button tb_Logout;
         private TextBox tb_Search;
         private TextBox tb_Salary;
         private TextBox tb_Phone;
